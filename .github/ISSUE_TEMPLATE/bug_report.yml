@@ -1,0 +1,43 @@
+name: Bug Report
+description: Report a bug or issue with Dictat
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the bug clearly.
+      placeholder: "When I tap the mic button in Messages, nothing happens..."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+      placeholder: "I expected the keyboard to start recording..."
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open Messages
+        2. Switch to Dictat keyboard
+        3. Tap the mic button
+        4. ...
+  - type: input
+    id: device
+    attributes:
+      label: Device
+      placeholder: "iPhone 15 Pro"
+  - type: input
+    id: ios-version
+    attributes:
+      label: iOS Version
+      placeholder: "18.4"
+  - type: input
+    id: app-version
+    attributes:
+      label: App Version
+      placeholder: "1.0"
