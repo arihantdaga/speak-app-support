@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictat - Voice Keyboard | Support</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: #1d1d1f;
+            background: #fff;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        header {
+            padding: 48px 0 32px;
+            text-align: center;
+            border-bottom: 1px solid #e5e5e7;
+        }
+
+        header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        header p {
+            font-size: 17px;
+            color: #6e6e73;
+        }
+
+        .support-btn {
+            display: inline-block;
+            margin-top: 24px;
+            padding: 14px 32px;
+            background: #F5C518;
+            color: #1d1d1f;
+            text-decoration: none;
+            border-radius: 12px;
+            font-size: 17px;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+
+        .support-btn:hover {
+            background: #e0b315;
+        }
+
+        section {
+            padding: 36px 0;
+            border-bottom: 1px solid #e5e5e7;
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        section h2 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .faq-item {
+            margin-bottom: 24px;
+        }
+
+        .faq-item h3 {
+            font-size: 17px;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+
+        .faq-item p {
+            font-size: 15px;
+            color: #424245;
+        }
+
+        .steps {
+            list-style: none;
+            counter-reset: steps;
+        }
+
+        .steps li {
+            counter-increment: steps;
+            padding: 12px 0 12px 44px;
+            position: relative;
+            font-size: 15px;
+            color: #424245;
+        }
+
+        .steps li::before {
+            content: counter(steps);
+            position: absolute;
+            left: 0;
+            top: 12px;
+            width: 28px;
+            height: 28px;
+            background: #F5C518;
+            color: #1d1d1f;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        .steps li strong {
+            color: #1d1d1f;
+        }
+
+        .contact-options {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 16px;
+        }
+
+        .contact-option {
+            display: block;
+            padding: 16px 20px;
+            border: 1px solid #e5e5e7;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #1d1d1f;
+            transition: border-color 0.2s, background 0.2s;
+        }
+
+        .contact-option:hover {
+            border-color: #F5C518;
+            background: #fffdf0;
+        }
+
+        .contact-option strong {
+            display: block;
+            font-size: 16px;
+            margin-bottom: 2px;
+        }
+
+        .contact-option span {
+            font-size: 14px;
+            color: #6e6e73;
+        }
+
+        footer {
+            padding: 32px 0;
+            text-align: center;
+            font-size: 13px;
+            color: #86868b;
+        }
+
+        footer a {
+            color: #86868b;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Dictat - Voice Keyboard</h1>
+        <p>Support & Help</p>
+        <a href="https://github.com/arihantdaga/speak-app-support/issues/new/choose" class="support-btn">Get Support</a>
+    </header>
+
+    <section>
+        <h2>Getting Started</h2>
+        <ol class="steps">
+            <li><strong>Install Dictat</strong> from the App Store.</li>
+            <li>Open <strong>Settings &rarr; General &rarr; Keyboard &rarr; Keyboards &rarr; Add New Keyboard</strong> and select <strong>Dictat</strong>.</li>
+            <li>Tap <strong>Dictat</strong> in the keyboard list and enable <strong>Allow Full Access</strong>. This is required so the keyboard can use the microphone. No data ever leaves your device.</li>
+            <li>In any app, tap the <strong>globe icon</strong> on your keyboard to switch to Dictat, then tap <strong>Start Dictate</strong> and speak. Your text is inserted automatically when you stop.</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <h3>Why does Dictat need "Full Access"?</h3>
+            <p>iOS requires Full Access for a keyboard to use the microphone. Dictat uses the microphone only for voice transcription. All processing happens on your device &mdash; no audio or text is ever sent to any server.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Does Dictat work offline?</h3>
+            <p>Yes. Dictat uses an on-device speech recognition model and works entirely without an internet connection.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Does Dictat collect any data?</h3>
+            <p>No. Dictat does not collect, store, or transmit any personal data. There are no analytics, no accounts, and no tracking of any kind.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>The keyboard is not showing up</h3>
+            <p>Make sure you added Dictat in <strong>Settings &rarr; General &rarr; Keyboard &rarr; Keyboards</strong>. If it still doesn't appear, try restarting your device. Occasionally iOS needs a restart to register new keyboards.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Transcription is not accurate</h3>
+            <p>Dictat works best in a quiet environment. Speak clearly and at a natural pace. The on-device model handles English well; accuracy may vary for strong accents or very noisy backgrounds.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>The app opens when I tap "Start Dictate"</h3>
+            <p>This is expected. Due to iOS restrictions, keyboard extensions cannot access the microphone directly. Dictat briefly opens the main app to record your voice, then returns the transcribed text to the keyboard. This happens quickly and automatically.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Contact Us</h2>
+        <p>Can't find what you're looking for? We're here to help.</p>
+        <div class="contact-options">
+            <a href="https://github.com/arihantdaga/speak-app-support/issues/new?labels=bug&template=bug_report.md&title=%5BBug%5D+" class="contact-option">
+                <strong>Report a Bug</strong>
+                <span>Something not working? Let us know and we'll look into it.</span>
+            </a>
+            <a href="https://github.com/arihantdaga/speak-app-support/issues/new?labels=feature-request&template=feature_request.md&title=%5BFeature%5D+" class="contact-option">
+                <strong>Request a Feature</strong>
+                <span>Have an idea for Dictat? We'd love to hear it.</span>
+            </a>
+            <a href="https://github.com/arihantdaga/speak-app-support/issues/new?labels=question&title=%5BQuestion%5D+" class="contact-option">
+                <strong>Ask a Question</strong>
+                <span>Need help with something? Ask us anything.</span>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p><a href="https://www.notion.so/Speak-privacy-policy-2cda5c1bcd2780b38d52f80268a337d3">Privacy Policy</a></p>
+        <p style="margin-top: 8px;">&copy; 2026 Dictat. All rights reserved.</p>
+    </footer>
+</div>
+
+</body>
+</html>
